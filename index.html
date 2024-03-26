@@ -158,7 +158,21 @@
       rotateCards()
 
       window.addEventListener('scroll', () => {
-         
+         let proportion = stackArea.getBoundingClientRect().top/window.innerHeight;
+
+         if(proportion <= 0) {
+            let n = cards.length;
+            let index = Math.ceil((proportion * n) / 2);
+            index = Math.abs(index) - 1;
+            for(let i=0; i<n; i++) {
+               if(i<=index) {
+                  cards[i].classList.add("active");
+               } else {
+                  cards[i].classList.remove("active");
+               }
+            }
+            rotateCards();
+         }
       })
    </script>
 </body>
