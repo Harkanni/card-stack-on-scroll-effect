@@ -118,12 +118,16 @@
       font-weight: 700;
       line-height: 88px;
    }
+
    .sub-title {
       width: 420px;
       font-family: poppins;
-      font-size: 14px;
+      font-size: 16px;
       margin-top: 30px;
+      text-align: justify;
+
    }
+
    .sub-title button {
       font-family: poppins;
       font-size: 14px;
@@ -136,28 +140,42 @@
       cursor: pointer;
       margin-top: 20px;
    }
-   .top, .bottom {
+
+   .top,
+   .bottom {
       width: 100%;
-      height: 100vh;
+      height: fit-content;
       font-family: poppins;
       font-size: 70px;
       display: flex;
       align-items: center;
       justify-content: center;
    }
+
+   .top img, .bottom img {
+      width: 100%;
+      height: 100%;
+      /* position: absolute; */
+      top: 0;
+      left: 0;
+      bottom: 0;
+      object-fit: cover;
+
+   }
 </style>
 
 <body>
    <div class="center">
-      <div class="top">Scroll Down</div>
+      <div class="top">
+         <img src="./img1.png" alt="Scroll Down">
+      </div>
       <div class="stack-area">
          <div class="left">
             <div class="title">Our Features</div>
             <div class="sub-title">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem distinctio minus autem,
-               temporibus laudantium quidem, cumque inventore deserunt quaerat voluptatibus perspiciatis? Delectus amet
-               qui perspiciatis velit labore. Deleniti, eius?
-            
+               Skip the hassle and cost of recruiting a bigger team and harness the efficiency of AI - we replace
+               conventional systems and costly agencies with a simple monthly payment.
+               The perfect solution for startups and businesses.
                <br>
                <button>See More Details</button>
             </div>
@@ -187,7 +205,9 @@
             </div>
          </div>
       </div>
-      <div class="bottom">Other Content</div>
+      <div class="bottom">
+         <img src="./img2.png" alt="Other Content">
+      </div>
    </div>
 
    <script>
