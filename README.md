@@ -1,7 +1,3 @@
-Got it! Based on the repository name and general expectations for a **card stack on scroll effect** project, here’s a draft README for your GitHub repository:
-
----
-
 # Card Stack on Scroll Effect
 
 This project implements a visually appealing card stacking effect as users scroll through a webpage. It is designed to enhance user experience by creating a smooth, interactive animation when navigating through card-based content.
